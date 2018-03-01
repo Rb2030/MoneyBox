@@ -1,0 +1,866 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		912BFBF42048237400EC7716 /* CommonLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912BFBF32048237400EC7716 /* CommonLabel.swift */; };
+		916015C52048284B00284649 /* CommonTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916015C42048284B00284649 /* CommonTextField.swift */; };
+		916015C720482EFB00284649 /* CommonButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916015C620482EFB00284649 /* CommonButton.swift */; };
+		916015C9204864FB00284649 /* AccountsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916015C8204864FA00284649 /* AccountsViewController.swift */; };
+		916015CB2048687E00284649 /* AccountsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916015CA2048687E00284649 /* AccountsButton.swift */; };
+		916015CD20488C1B00284649 /* Subviewable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916015CC20488C1B00284649 /* Subviewable.swift */; };
+		91E924702045E5E100443FF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E9246F2045E5E100443FF1 /* AppDelegate.swift */; };
+		91E924722045E5E100443FF1 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E924712045E5E100443FF1 /* InitialViewController.swift */; };
+		91E924752045E5E100443FF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91E924732045E5E100443FF1 /* Main.storyboard */; };
+		91E924772045E5E100443FF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91E924762045E5E100443FF1 /* Assets.xcassets */; };
+		91E9247A2045E5E100443FF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91E924782045E5E100443FF1 /* LaunchScreen.storyboard */; };
+		91E924C82046E99700443FF1 /* MoneyBox_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E924C72046E99700443FF1 /* MoneyBox_AppUITests.swift */; };
+		91E924D62046E9A300443FF1 /* MoneyBox_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E924D52046E9A300443FF1 /* MoneyBox_AppTests.swift */; };
+		91E924DD20472A7B00443FF1 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91E924DE20472A7B00443FF1 /* SnapKit.framework */; };
+		91E924E02047375800443FF1 /* UI+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E924DF2047375800443FF1 /* UI+Extension.swift */; };
+		927AFA5133FC4F7558702A33 /* Pods_MoneyBox_App_MoneyBox_AppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E38AD8F86CA172F97E33D2B /* Pods_MoneyBox_App_MoneyBox_AppUITests.framework */; };
+		A4F903B39D28DD24637BC9AC /* Pods_MoneyBox_AppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F0498D1D8F73C5FE7C5D554 /* Pods_MoneyBox_AppTests.framework */; };
+		BABC76663B166C4C6ED0804B /* Pods_MoneyBox_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE760FDDBE5021C4B49F4DCA /* Pods_MoneyBox_App.framework */; };
+		C9C5528F1345AB54355D5BCC /* Pods_MoneyBox_App_MoneyBox_AppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0689F1C56798F93DDBF3C09F /* Pods_MoneyBox_App_MoneyBox_AppTests.framework */; };
+		F95AB33A4B0483CFBA1CEA89 /* Pods_MoneyBox_AppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C569E359E84FB7B718FE6D8 /* Pods_MoneyBox_AppUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		91E924CA2046E99700443FF1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 91E924642045E5E000443FF1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 91E9246B2045E5E000443FF1;
+			remoteInfo = MoneyBox_App;
+		};
+		91E924D82046E9A300443FF1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 91E924642045E5E000443FF1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 91E9246B2045E5E000443FF1;
+			remoteInfo = MoneyBox_App;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0689F1C56798F93DDBF3C09F /* Pods_MoneyBox_App_MoneyBox_AppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoneyBox_App_MoneyBox_AppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B03F3D193B61517360B9AA2 /* Pods-MoneyBox_App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyBox_App.release.xcconfig"; path = "Pods/Target Support Files/Pods-MoneyBox_App/Pods-MoneyBox_App.release.xcconfig"; sourceTree = "<group>"; };
+		20E5D4ED7B7997946675F007 /* Pods-MoneyBox_AppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyBox_AppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MoneyBox_AppTests/Pods-MoneyBox_AppTests.release.xcconfig"; sourceTree = "<group>"; };
+		21B23EF84C9E285FF6661239 /* Pods-MoneyBox_AppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyBox_AppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MoneyBox_AppUITests/Pods-MoneyBox_AppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		2E38AD8F86CA172F97E33D2B /* Pods_MoneyBox_App_MoneyBox_AppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoneyBox_App_MoneyBox_AppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C569E359E84FB7B718FE6D8 /* Pods_MoneyBox_AppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoneyBox_AppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		601588B7D0EB533CA9BD1348 /* Pods-MoneyBox_App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyBox_App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MoneyBox_App/Pods-MoneyBox_App.debug.xcconfig"; sourceTree = "<group>"; };
+		84B5BEC69E25CD5C31345C4A /* Pods-MoneyBox_AppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyBox_AppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MoneyBox_AppTests/Pods-MoneyBox_AppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8EC63A7D5755DC7AB0BB5795 /* Pods-MoneyBox_App-MoneyBox_AppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyBox_App-MoneyBox_AppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MoneyBox_App-MoneyBox_AppUITests/Pods-MoneyBox_App-MoneyBox_AppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		912BFBEB2047499B00EC7716 /* SF-UI-Display-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Display-Heavy.otf"; sourceTree = "<group>"; };
+		912BFBEC2047499B00EC7716 /* SF-UI-Display-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Display-Regular.otf"; sourceTree = "<group>"; };
+		912BFBED2047499B00EC7716 /* SF-UI-Display-Ultralight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Display-Ultralight.otf"; sourceTree = "<group>"; };
+		912BFBEE2047499B00EC7716 /* SF-UI-Display-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Display-Light.otf"; sourceTree = "<group>"; };
+		912BFBEF2047499B00EC7716 /* SF-UI-Display-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Display-Bold.otf"; sourceTree = "<group>"; };
+		912BFBF32048237400EC7716 /* CommonLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonLabel.swift; sourceTree = "<group>"; };
+		916015C42048284B00284649 /* CommonTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonTextField.swift; sourceTree = "<group>"; };
+		916015C620482EFB00284649 /* CommonButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonButton.swift; sourceTree = "<group>"; };
+		916015C8204864FA00284649 /* AccountsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsViewController.swift; sourceTree = "<group>"; };
+		916015CA2048687E00284649 /* AccountsButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsButton.swift; sourceTree = "<group>"; };
+		916015CC20488C1B00284649 /* Subviewable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subviewable.swift; sourceTree = "<group>"; };
+		91E9246C2045E5E100443FF1 /* MoneyBox_App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoneyBox_App.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		91E9246F2045E5E100443FF1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		91E924712045E5E100443FF1 /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
+		91E924742045E5E100443FF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		91E924762045E5E100443FF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		91E924792045E5E100443FF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		91E9247B2045E5E100443FF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		91E924C52046E99700443FF1 /* MoneyBox_AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoneyBox_AppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		91E924C72046E99700443FF1 /* MoneyBox_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyBox_AppUITests.swift; sourceTree = "<group>"; };
+		91E924C92046E99700443FF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		91E924D32046E9A300443FF1 /* MoneyBox_AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoneyBox_AppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		91E924D52046E9A300443FF1 /* MoneyBox_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyBox_AppTests.swift; sourceTree = "<group>"; };
+		91E924D72046E9A300443FF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		91E924DE20472A7B00443FF1 /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		91E924DF2047375800443FF1 /* UI+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UI+Extension.swift"; sourceTree = "<group>"; };
+		9F0498D1D8F73C5FE7C5D554 /* Pods_MoneyBox_AppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoneyBox_AppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A712D511EABB82821BEFADE8 /* Pods-MoneyBox_App-MoneyBox_AppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyBox_App-MoneyBox_AppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MoneyBox_App-MoneyBox_AppTests/Pods-MoneyBox_App-MoneyBox_AppTests.release.xcconfig"; sourceTree = "<group>"; };
+		CE760FDDBE5021C4B49F4DCA /* Pods_MoneyBox_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoneyBox_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E82F4F0958C0BBB6589A2B3B /* Pods-MoneyBox_App-MoneyBox_AppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyBox_App-MoneyBox_AppUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MoneyBox_App-MoneyBox_AppUITests/Pods-MoneyBox_App-MoneyBox_AppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		EF0F557AB7B31CCDADC7A1C2 /* Pods-MoneyBox_AppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyBox_AppUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MoneyBox_AppUITests/Pods-MoneyBox_AppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F786F091352761A7B60C2DD7 /* Pods-MoneyBox_App-MoneyBox_AppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyBox_App-MoneyBox_AppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MoneyBox_App-MoneyBox_AppTests/Pods-MoneyBox_App-MoneyBox_AppTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		91E924692045E5E000443FF1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BABC76663B166C4C6ED0804B /* Pods_MoneyBox_App.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91E924C22046E99700443FF1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F95AB33A4B0483CFBA1CEA89 /* Pods_MoneyBox_AppUITests.framework in Frameworks */,
+				927AFA5133FC4F7558702A33 /* Pods_MoneyBox_App_MoneyBox_AppUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91E924D02046E9A300443FF1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91E924DD20472A7B00443FF1 /* SnapKit.framework in Frameworks */,
+				A4F903B39D28DD24637BC9AC /* Pods_MoneyBox_AppTests.framework in Frameworks */,
+				C9C5528F1345AB54355D5BCC /* Pods_MoneyBox_App_MoneyBox_AppTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A2EF11DED2EB9E57B01497D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				601588B7D0EB533CA9BD1348 /* Pods-MoneyBox_App.debug.xcconfig */,
+				0B03F3D193B61517360B9AA2 /* Pods-MoneyBox_App.release.xcconfig */,
+				84B5BEC69E25CD5C31345C4A /* Pods-MoneyBox_AppTests.debug.xcconfig */,
+				20E5D4ED7B7997946675F007 /* Pods-MoneyBox_AppTests.release.xcconfig */,
+				21B23EF84C9E285FF6661239 /* Pods-MoneyBox_AppUITests.debug.xcconfig */,
+				EF0F557AB7B31CCDADC7A1C2 /* Pods-MoneyBox_AppUITests.release.xcconfig */,
+				F786F091352761A7B60C2DD7 /* Pods-MoneyBox_App-MoneyBox_AppTests.debug.xcconfig */,
+				A712D511EABB82821BEFADE8 /* Pods-MoneyBox_App-MoneyBox_AppTests.release.xcconfig */,
+				8EC63A7D5755DC7AB0BB5795 /* Pods-MoneyBox_App-MoneyBox_AppUITests.debug.xcconfig */,
+				E82F4F0958C0BBB6589A2B3B /* Pods-MoneyBox_App-MoneyBox_AppUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		654D6C980DF8214CA3125C79 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				91E924DE20472A7B00443FF1 /* SnapKit.framework */,
+				CE760FDDBE5021C4B49F4DCA /* Pods_MoneyBox_App.framework */,
+				9F0498D1D8F73C5FE7C5D554 /* Pods_MoneyBox_AppTests.framework */,
+				3C569E359E84FB7B718FE6D8 /* Pods_MoneyBox_AppUITests.framework */,
+				0689F1C56798F93DDBF3C09F /* Pods_MoneyBox_App_MoneyBox_AppTests.framework */,
+				2E38AD8F86CA172F97E33D2B /* Pods_MoneyBox_App_MoneyBox_AppUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		912BFBF0204749BA00EC7716 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				912BFBEF2047499B00EC7716 /* SF-UI-Display-Bold.otf */,
+				912BFBEB2047499B00EC7716 /* SF-UI-Display-Heavy.otf */,
+				912BFBEE2047499B00EC7716 /* SF-UI-Display-Light.otf */,
+				912BFBEC2047499B00EC7716 /* SF-UI-Display-Regular.otf */,
+				912BFBED2047499B00EC7716 /* SF-UI-Display-Ultralight.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		916015CE20488C2900284649 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				916015CC20488C1B00284649 /* Subviewable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		91E924632045E5E000443FF1 = {
+			isa = PBXGroup;
+			children = (
+				91E9246E2045E5E100443FF1 /* MoneyBox_App */,
+				91E924D42046E9A300443FF1 /* MoneyBox_AppTests */,
+				91E924C62046E99700443FF1 /* MoneyBox_AppUITests */,
+				91E9246D2045E5E100443FF1 /* Products */,
+				0A2EF11DED2EB9E57B01497D /* Pods */,
+				654D6C980DF8214CA3125C79 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		91E9246D2045E5E100443FF1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				91E9246C2045E5E100443FF1 /* MoneyBox_App.app */,
+				91E924C52046E99700443FF1 /* MoneyBox_AppUITests.xctest */,
+				91E924D32046E9A300443FF1 /* MoneyBox_AppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		91E9246E2045E5E100443FF1 /* MoneyBox_App */ = {
+			isa = PBXGroup;
+			children = (
+				91E924712045E5E100443FF1 /* InitialViewController.swift */,
+				916015C8204864FA00284649 /* AccountsViewController.swift */,
+				91E9248F2046DE5500443FF1 /* Common */,
+				91E924902046E04900443FF1 /* SupportingFiles */,
+			);
+			path = MoneyBox_App;
+			sourceTree = "<group>";
+		};
+		91E9248F2046DE5500443FF1 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				91E924DF2047375800443FF1 /* UI+Extension.swift */,
+				912BFBF32048237400EC7716 /* CommonLabel.swift */,
+				916015C42048284B00284649 /* CommonTextField.swift */,
+				916015C620482EFB00284649 /* CommonButton.swift */,
+				916015CA2048687E00284649 /* AccountsButton.swift */,
+				916015CE20488C2900284649 /* Protocols */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		91E924902046E04900443FF1 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				91E9246F2045E5E100443FF1 /* AppDelegate.swift */,
+				91E924762045E5E100443FF1 /* Assets.xcassets */,
+				912BFBF0204749BA00EC7716 /* Fonts */,
+				91E924782045E5E100443FF1 /* LaunchScreen.storyboard */,
+				91E9247B2045E5E100443FF1 /* Info.plist */,
+				91E924732045E5E100443FF1 /* Main.storyboard */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		91E924C62046E99700443FF1 /* MoneyBox_AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				91E924C72046E99700443FF1 /* MoneyBox_AppUITests.swift */,
+				91E924C92046E99700443FF1 /* Info.plist */,
+			);
+			path = MoneyBox_AppUITests;
+			sourceTree = "<group>";
+		};
+		91E924D42046E9A300443FF1 /* MoneyBox_AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				91E924D52046E9A300443FF1 /* MoneyBox_AppTests.swift */,
+				91E924D72046E9A300443FF1 /* Info.plist */,
+			);
+			path = MoneyBox_AppTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		91E9246B2045E5E000443FF1 /* MoneyBox_App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 91E924892045E5E100443FF1 /* Build configuration list for PBXNativeTarget "MoneyBox_App" */;
+			buildPhases = (
+				F9AA99E2D086F8142C012628 /* [CP] Check Pods Manifest.lock */,
+				91E924682045E5E000443FF1 /* Sources */,
+				91E924692045E5E000443FF1 /* Frameworks */,
+				91E9246A2045E5E000443FF1 /* Resources */,
+				19F49D10ADA638D70C29CDA1 /* [CP] Embed Pods Frameworks */,
+				982177EB9811C3493CA106BC /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MoneyBox_App;
+			productName = MoneyBox_App;
+			productReference = 91E9246C2045E5E100443FF1 /* MoneyBox_App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		91E924C42046E99700443FF1 /* MoneyBox_AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 91E924CC2046E99700443FF1 /* Build configuration list for PBXNativeTarget "MoneyBox_AppUITests" */;
+			buildPhases = (
+				73298E882E1C8E836EB54011 /* [CP] Check Pods Manifest.lock */,
+				91E924C12046E99700443FF1 /* Sources */,
+				91E924C22046E99700443FF1 /* Frameworks */,
+				91E924C32046E99700443FF1 /* Resources */,
+				6DDB9F358A302B17D082F60A /* [CP] Embed Pods Frameworks */,
+				996B61C2D30D99B738F1A885 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				91E924CB2046E99700443FF1 /* PBXTargetDependency */,
+			);
+			name = MoneyBox_AppUITests;
+			productName = MoneyBox_AppUITests;
+			productReference = 91E924C52046E99700443FF1 /* MoneyBox_AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		91E924D22046E9A300443FF1 /* MoneyBox_AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 91E924DA2046E9A400443FF1 /* Build configuration list for PBXNativeTarget "MoneyBox_AppTests" */;
+			buildPhases = (
+				B5E912A7F636339F8C338F28 /* [CP] Check Pods Manifest.lock */,
+				91E924CF2046E9A300443FF1 /* Sources */,
+				91E924D02046E9A300443FF1 /* Frameworks */,
+				91E924D12046E9A300443FF1 /* Resources */,
+				72581BA632E8C8B849C088ED /* [CP] Embed Pods Frameworks */,
+				997E820934B5F3E9F3313EAB /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				91E924D92046E9A300443FF1 /* PBXTargetDependency */,
+			);
+			name = MoneyBox_AppTests;
+			productName = MoneyBox_AppTests;
+			productReference = 91E924D32046E9A300443FF1 /* MoneyBox_AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		91E924642045E5E000443FF1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = Ross;
+				TargetAttributes = {
+					91E9246B2045E5E000443FF1 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					91E924C42046E99700443FF1 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 91E9246B2045E5E000443FF1;
+					};
+					91E924D22046E9A300443FF1 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 91E9246B2045E5E000443FF1;
+					};
+				};
+			};
+			buildConfigurationList = 91E924672045E5E000443FF1 /* Build configuration list for PBXProject "MoneyBox_App" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 91E924632045E5E000443FF1;
+			productRefGroup = 91E9246D2045E5E100443FF1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				91E9246B2045E5E000443FF1 /* MoneyBox_App */,
+				91E924C42046E99700443FF1 /* MoneyBox_AppUITests */,
+				91E924D22046E9A300443FF1 /* MoneyBox_AppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		91E9246A2045E5E000443FF1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91E9247A2045E5E100443FF1 /* LaunchScreen.storyboard in Resources */,
+				91E924772045E5E100443FF1 /* Assets.xcassets in Resources */,
+				91E924752045E5E100443FF1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91E924C32046E99700443FF1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91E924D12046E9A300443FF1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		19F49D10ADA638D70C29CDA1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MoneyBox_App/Pods-MoneyBox_App-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MoneyBox_App/Pods-MoneyBox_App-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6DDB9F358A302B17D082F60A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MoneyBox_AppUITests/Pods-MoneyBox_AppUITests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MoneyBox_AppUITests/Pods-MoneyBox_AppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		72581BA632E8C8B849C088ED /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MoneyBox_AppTests/Pods-MoneyBox_AppTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MoneyBox_AppTests/Pods-MoneyBox_AppTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		73298E882E1C8E836EB54011 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MoneyBox_AppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		982177EB9811C3493CA106BC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MoneyBox_App/Pods-MoneyBox_App-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		996B61C2D30D99B738F1A885 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MoneyBox_AppUITests/Pods-MoneyBox_AppUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		997E820934B5F3E9F3313EAB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MoneyBox_AppTests/Pods-MoneyBox_AppTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B5E912A7F636339F8C338F28 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MoneyBox_AppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F9AA99E2D086F8142C012628 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MoneyBox_App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		91E924682045E5E000443FF1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91E924722045E5E100443FF1 /* InitialViewController.swift in Sources */,
+				912BFBF42048237400EC7716 /* CommonLabel.swift in Sources */,
+				91E924E02047375800443FF1 /* UI+Extension.swift in Sources */,
+				916015CB2048687E00284649 /* AccountsButton.swift in Sources */,
+				916015C52048284B00284649 /* CommonTextField.swift in Sources */,
+				916015CD20488C1B00284649 /* Subviewable.swift in Sources */,
+				916015C720482EFB00284649 /* CommonButton.swift in Sources */,
+				916015C9204864FB00284649 /* AccountsViewController.swift in Sources */,
+				91E924702045E5E100443FF1 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91E924C12046E99700443FF1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91E924C82046E99700443FF1 /* MoneyBox_AppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91E924CF2046E9A300443FF1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91E924D62046E9A300443FF1 /* MoneyBox_AppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		91E924CB2046E99700443FF1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 91E9246B2045E5E000443FF1 /* MoneyBox_App */;
+			targetProxy = 91E924CA2046E99700443FF1 /* PBXContainerItemProxy */;
+		};
+		91E924D92046E9A300443FF1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 91E9246B2045E5E000443FF1 /* MoneyBox_App */;
+			targetProxy = 91E924D82046E9A300443FF1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		91E924732045E5E100443FF1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				91E924742045E5E100443FF1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		91E924782045E5E100443FF1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				91E924792045E5E100443FF1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		91E924872045E5E100443FF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		91E924882045E5E100443FF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		91E9248A2045E5E100443FF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 601588B7D0EB533CA9BD1348 /* Pods-MoneyBox_App.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q2NTR5P8Y4;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = MoneyBox_App/SupportingFiles/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ross-bradley.MoneyBox-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				SYSTEM_FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		91E9248B2045E5E100443FF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B03F3D193B61517360B9AA2 /* Pods-MoneyBox_App.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q2NTR5P8Y4;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = MoneyBox_App/SupportingFiles/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ross-bradley.MoneyBox-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				SYSTEM_FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		91E924CD2046E99700443FF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21B23EF84C9E285FF6661239 /* Pods-MoneyBox_AppUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q2NTR5P8Y4;
+				INFOPLIST_FILE = MoneyBox_AppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ross-bradley.MoneyBox-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MoneyBox_App;
+			};
+			name = Debug;
+		};
+		91E924CE2046E99700443FF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF0F557AB7B31CCDADC7A1C2 /* Pods-MoneyBox_AppUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q2NTR5P8Y4;
+				INFOPLIST_FILE = MoneyBox_AppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ross-bradley.MoneyBox-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MoneyBox_App;
+			};
+			name = Release;
+		};
+		91E924DB2046E9A400443FF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84B5BEC69E25CD5C31345C4A /* Pods-MoneyBox_AppTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q2NTR5P8Y4;
+				INFOPLIST_FILE = MoneyBox_AppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ross-bradley.MoneyBox-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MoneyBox_App.app/MoneyBox_App";
+			};
+			name = Debug;
+		};
+		91E924DC2046E9A400443FF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20E5D4ED7B7997946675F007 /* Pods-MoneyBox_AppTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q2NTR5P8Y4;
+				INFOPLIST_FILE = MoneyBox_AppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ross-bradley.MoneyBox-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MoneyBox_App.app/MoneyBox_App";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		91E924672045E5E000443FF1 /* Build configuration list for PBXProject "MoneyBox_App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91E924872045E5E100443FF1 /* Debug */,
+				91E924882045E5E100443FF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		91E924892045E5E100443FF1 /* Build configuration list for PBXNativeTarget "MoneyBox_App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91E9248A2045E5E100443FF1 /* Debug */,
+				91E9248B2045E5E100443FF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		91E924CC2046E99700443FF1 /* Build configuration list for PBXNativeTarget "MoneyBox_AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91E924CD2046E99700443FF1 /* Debug */,
+				91E924CE2046E99700443FF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		91E924DA2046E9A400443FF1 /* Build configuration list for PBXNativeTarget "MoneyBox_AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91E924DB2046E9A400443FF1 /* Debug */,
+				91E924DC2046E9A400443FF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 91E924642045E5E000443FF1 /* Project object */;
+}
