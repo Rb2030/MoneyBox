@@ -21,7 +21,7 @@
 		91E924C82046E99700443FF1 /* MoneyBox_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E924C72046E99700443FF1 /* MoneyBox_AppUITests.swift */; };
 		91E924D62046E9A300443FF1 /* MoneyBox_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E924D52046E9A300443FF1 /* MoneyBox_AppTests.swift */; };
 		91E924DD20472A7B00443FF1 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91E924DE20472A7B00443FF1 /* SnapKit.framework */; };
-		91E924E02047375800443FF1 /* UI+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E924DF2047375800443FF1 /* UI+Extension.swift */; };
+		91E924E02047375800443FF1 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E924DF2047375800443FF1 /* UIColor+Extension.swift */; };
 		927AFA5133FC4F7558702A33 /* Pods_MoneyBox_App_MoneyBox_AppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E38AD8F86CA172F97E33D2B /* Pods_MoneyBox_App_MoneyBox_AppUITests.framework */; };
 		A4F903B39D28DD24637BC9AC /* Pods_MoneyBox_AppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F0498D1D8F73C5FE7C5D554 /* Pods_MoneyBox_AppTests.framework */; };
 		BABC76663B166C4C6ED0804B /* Pods_MoneyBox_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE760FDDBE5021C4B49F4DCA /* Pods_MoneyBox_App.framework */; };
@@ -81,7 +81,7 @@
 		91E924D52046E9A300443FF1 /* MoneyBox_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyBox_AppTests.swift; sourceTree = "<group>"; };
 		91E924D72046E9A300443FF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		91E924DE20472A7B00443FF1 /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		91E924DF2047375800443FF1 /* UI+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UI+Extension.swift"; sourceTree = "<group>"; };
+		91E924DF2047375800443FF1 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		9F0498D1D8F73C5FE7C5D554 /* Pods_MoneyBox_AppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoneyBox_AppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A712D511EABB82821BEFADE8 /* Pods-MoneyBox_App-MoneyBox_AppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyBox_App-MoneyBox_AppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MoneyBox_App-MoneyBox_AppTests/Pods-MoneyBox_App-MoneyBox_AppTests.release.xcconfig"; sourceTree = "<group>"; };
 		CE760FDDBE5021C4B49F4DCA /* Pods_MoneyBox_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoneyBox_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -207,7 +207,7 @@
 		91E9248F2046DE5500443FF1 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				91E924DF2047375800443FF1 /* UI+Extension.swift */,
+				91E924DF2047375800443FF1 /* UIColor+Extension.swift */,
 				912BFBF32048237400EC7716 /* CommonLabel.swift */,
 				916015C42048284B00284649 /* CommonTextField.swift */,
 				916015C620482EFB00284649 /* CommonButton.swift */,
@@ -549,7 +549,7 @@
 			files = (
 				91E924722045E5E100443FF1 /* InitialViewController.swift in Sources */,
 				912BFBF42048237400EC7716 /* CommonLabel.swift in Sources */,
-				91E924E02047375800443FF1 /* UI+Extension.swift in Sources */,
+				91E924E02047375800443FF1 /* UIColor+Extension.swift in Sources */,
 				916015CB2048687E00284649 /* AccountsButton.swift in Sources */,
 				916015C52048284B00284649 /* CommonTextField.swift in Sources */,
 				916015CD20488C1B00284649 /* Subviewable.swift in Sources */,

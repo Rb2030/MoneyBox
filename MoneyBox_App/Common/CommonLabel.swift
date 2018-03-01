@@ -9,7 +9,6 @@
 import UIKit
 
 class CommonLabel: UILabel {
-    
     required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)!
         self.commonInit()
@@ -25,8 +24,7 @@ class CommonLabel: UILabel {
         self.textColor = .pageCreamLabelColor
         self.numberOfLines = 0
         self.textAlignment = .center
-        let fontSize = self.font.pointSize;
-        self.font = UIFont(name: "SFUIDisplay-Ultralight", size: fontSize)
+        self.font = 
     }
 }
 
