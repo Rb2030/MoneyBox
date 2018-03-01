@@ -1,5 +1,5 @@
 //
-//  CommonButton.swift
+//  MoneyBoxButton.swift
 //  MoneyBox_App
 //
 //  Created by Ross on 01/03/2018.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CommonButton: UIButton {
+class MoneyBoxButton: UIButton {
 
     required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)!
@@ -23,12 +23,12 @@ class CommonButton: UIButton {
     
     func commonInit(){
         
-        self.backgroundColor = .lightTealButtonColor
-        self.setTitleColor( .buttonNavyColor, for: .normal)
-        self.setTitleColor( .pageCreamLabelColor, for: .highlighted)
-        self.titleLabel?.font = UIFont(name: "SFUIDisplay-Ultralight", size: 25)
-        self.clipsToBounds = true
-        self.setProperties(borderColor: .lightTealButtonColor, borderWidth:1.0, cornerRadius:5.0)
+        backgroundColor = .lightTealButtonColor
+        setTitleColor( .buttonNavyColor, for: .normal)
+        setTitleColor( .pageCreamLabelColor, for: .highlighted)
+        titleLabel?.font = .buttonFont
+        clipsToBounds = true
+        setProperties(borderColor: .lightTealButtonColor, borderWidth:1.0, cornerRadius:5.0)
     }
     
     func setProperties(borderColor: UIColor, borderWidth: CGFloat, cornerRadius: Float) {

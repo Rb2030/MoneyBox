@@ -11,7 +11,7 @@ import UIKit
 class AccountsViewController: UIViewController {
     
     private let contentView = UIView()
-    private let titleLabel = CommonLabel()
+    private let titleLabel = MoneyBoxLabel()
     
     static let padding = Float(20)
     static let margin = Float(3)
@@ -28,13 +28,17 @@ class AccountsViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+                navigationController?.navigationBar.isHidden = false
+    }
+    
 }
 
 extension AccountsViewController: Subviewable {
     
     internal func setupHierarchy() {
         self.contentView.backgroundColor = .tealBackgroundColor
-        self.titleLabel.text = "Your Accounts"
+        self.titleLabel.text = String.Localized.yourAccounts
         
     }
     
@@ -50,7 +54,7 @@ extension AccountsViewController: Subviewable {
         }
         
         self.titleLabel.snp.makeConstraints { (make) in
-            make.top.equalTo((topLayoutGuide.snp.bottom)).offset(-InitialViewController.padding)
+            make.top.equalTo((view.snp.top)).offset(-Layout.labelPadding)
             make.width.equalTo(contentView.snp.width).multipliedBy(0.5)
             make.centerX.equalToSuperview()
             make.bottom.equalToSuperview()

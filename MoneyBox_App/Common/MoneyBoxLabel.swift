@@ -1,5 +1,5 @@
 //
-//  CommonLabel.swift
+//  MoneyBoxLabel.swift
 //  MoneyBox_App
 //
 //  Created by Ross on 28/02/2018.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CommonLabel: UILabel {
+class MoneyBoxLabel: UILabel {
     required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)!
         self.commonInit()
@@ -24,7 +24,7 @@ class CommonLabel: UILabel {
         self.textColor = .pageCreamLabelColor
         self.numberOfLines = 0
         self.textAlignment = .center
-        self.font = 
+        self.font = .buttonFont
     }
 }
 

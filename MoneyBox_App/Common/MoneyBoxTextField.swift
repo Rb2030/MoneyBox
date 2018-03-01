@@ -1,5 +1,5 @@
 //
-//  CommonTextField.swift
+//  MoneyBoxTextField.swift
 //  MoneyBox_App
 //
 //  Created by Ross on 01/03/2018.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CommonTextField: UITextField {
+class MoneyBoxTextField: UITextField {
 
     required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)!

@@ -7,15 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		912BFBF42048237400EC7716 /* CommonLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912BFBF32048237400EC7716 /* CommonLabel.swift */; };
-		916015C52048284B00284649 /* CommonTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916015C42048284B00284649 /* CommonTextField.swift */; };
-		916015C720482EFB00284649 /* CommonButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916015C620482EFB00284649 /* CommonButton.swift */; };
+		912BFBF42048237400EC7716 /* MoneyBoxLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912BFBF32048237400EC7716 /* MoneyBoxLabel.swift */; };
+		916015C52048284B00284649 /* MoneyBoxTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916015C42048284B00284649 /* MoneyBoxTextField.swift */; };
+		916015C720482EFB00284649 /* MoneyBoxButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916015C620482EFB00284649 /* MoneyBoxButton.swift */; };
 		916015C9204864FB00284649 /* AccountsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916015C8204864FA00284649 /* AccountsViewController.swift */; };
 		916015CB2048687E00284649 /* AccountsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916015CA2048687E00284649 /* AccountsButton.swift */; };
 		916015CD20488C1B00284649 /* Subviewable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916015CC20488C1B00284649 /* Subviewable.swift */; };
+		916015D02048913D00284649 /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916015CF2048913D00284649 /* UIFont+Extension.swift */; };
+		916015D2204894CC00284649 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916015D1204894CC00284649 /* Common.swift */; };
+		916015D82048C12600284649 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 916015DA2048C12600284649 /* Localizable.strings */; };
+		916015DC2048C16400284649 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916015DB2048C16400284649 /* String+Extension.swift */; };
 		91E924702045E5E100443FF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E9246F2045E5E100443FF1 /* AppDelegate.swift */; };
 		91E924722045E5E100443FF1 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E924712045E5E100443FF1 /* InitialViewController.swift */; };
-		91E924752045E5E100443FF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91E924732045E5E100443FF1 /* Main.storyboard */; };
 		91E924772045E5E100443FF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91E924762045E5E100443FF1 /* Assets.xcassets */; };
 		91E9247A2045E5E100443FF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91E924782045E5E100443FF1 /* LaunchScreen.storyboard */; };
 		91E924C82046E99700443FF1 /* MoneyBox_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E924C72046E99700443FF1 /* MoneyBox_AppUITests.swift */; };
@@ -56,21 +59,21 @@
 		601588B7D0EB533CA9BD1348 /* Pods-MoneyBox_App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyBox_App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MoneyBox_App/Pods-MoneyBox_App.debug.xcconfig"; sourceTree = "<group>"; };
 		84B5BEC69E25CD5C31345C4A /* Pods-MoneyBox_AppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyBox_AppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MoneyBox_AppTests/Pods-MoneyBox_AppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8EC63A7D5755DC7AB0BB5795 /* Pods-MoneyBox_App-MoneyBox_AppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyBox_App-MoneyBox_AppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MoneyBox_App-MoneyBox_AppUITests/Pods-MoneyBox_App-MoneyBox_AppUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		912BFBEB2047499B00EC7716 /* SF-UI-Display-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Display-Heavy.otf"; sourceTree = "<group>"; };
-		912BFBEC2047499B00EC7716 /* SF-UI-Display-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Display-Regular.otf"; sourceTree = "<group>"; };
-		912BFBED2047499B00EC7716 /* SF-UI-Display-Ultralight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Display-Ultralight.otf"; sourceTree = "<group>"; };
-		912BFBEE2047499B00EC7716 /* SF-UI-Display-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Display-Light.otf"; sourceTree = "<group>"; };
-		912BFBEF2047499B00EC7716 /* SF-UI-Display-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Display-Bold.otf"; sourceTree = "<group>"; };
-		912BFBF32048237400EC7716 /* CommonLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonLabel.swift; sourceTree = "<group>"; };
-		916015C42048284B00284649 /* CommonTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonTextField.swift; sourceTree = "<group>"; };
-		916015C620482EFB00284649 /* CommonButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonButton.swift; sourceTree = "<group>"; };
+		912BFBF32048237400EC7716 /* MoneyBoxLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyBoxLabel.swift; sourceTree = "<group>"; };
+		916015C42048284B00284649 /* MoneyBoxTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyBoxTextField.swift; sourceTree = "<group>"; };
+		916015C620482EFB00284649 /* MoneyBoxButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyBoxButton.swift; sourceTree = "<group>"; };
 		916015C8204864FA00284649 /* AccountsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsViewController.swift; sourceTree = "<group>"; };
 		916015CA2048687E00284649 /* AccountsButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsButton.swift; sourceTree = "<group>"; };
 		916015CC20488C1B00284649 /* Subviewable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subviewable.swift; sourceTree = "<group>"; };
+		916015CF2048913D00284649 /* UIFont+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
+		916015D1204894CC00284649 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		916015D52048C0BE00284649 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		916015D92048C12600284649 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		916015DB2048C16400284649 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		916015DD2048C2A300284649 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		91E9246C2045E5E100443FF1 /* MoneyBox_App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoneyBox_App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91E9246F2045E5E100443FF1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		91E924712045E5E100443FF1 /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
-		91E924742045E5E100443FF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		91E924762045E5E100443FF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		91E924792045E5E100443FF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		91E9247B2045E5E100443FF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -151,18 +154,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		912BFBF0204749BA00EC7716 /* Fonts */ = {
-			isa = PBXGroup;
-			children = (
-				912BFBEF2047499B00EC7716 /* SF-UI-Display-Bold.otf */,
-				912BFBEB2047499B00EC7716 /* SF-UI-Display-Heavy.otf */,
-				912BFBEE2047499B00EC7716 /* SF-UI-Display-Light.otf */,
-				912BFBEC2047499B00EC7716 /* SF-UI-Display-Regular.otf */,
-				912BFBED2047499B00EC7716 /* SF-UI-Display-Ultralight.otf */,
-			);
-			path = Fonts;
-			sourceTree = "<group>";
-		};
 		916015CE20488C2900284649 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
@@ -208,9 +199,12 @@
 			isa = PBXGroup;
 			children = (
 				91E924DF2047375800443FF1 /* UIColor+Extension.swift */,
-				912BFBF32048237400EC7716 /* CommonLabel.swift */,
-				916015C42048284B00284649 /* CommonTextField.swift */,
-				916015C620482EFB00284649 /* CommonButton.swift */,
+				916015CF2048913D00284649 /* UIFont+Extension.swift */,
+				916015D1204894CC00284649 /* Common.swift */,
+				912BFBF32048237400EC7716 /* MoneyBoxLabel.swift */,
+				916015C42048284B00284649 /* MoneyBoxTextField.swift */,
+				916015DB2048C16400284649 /* String+Extension.swift */,
+				916015C620482EFB00284649 /* MoneyBoxButton.swift */,
 				916015CA2048687E00284649 /* AccountsButton.swift */,
 				916015CE20488C2900284649 /* Protocols */,
 			);
@@ -221,11 +215,10 @@
 			isa = PBXGroup;
 			children = (
 				91E9246F2045E5E100443FF1 /* AppDelegate.swift */,
+				916015DA2048C12600284649 /* Localizable.strings */,
 				91E924762045E5E100443FF1 /* Assets.xcassets */,
-				912BFBF0204749BA00EC7716 /* Fonts */,
 				91E924782045E5E100443FF1 /* LaunchScreen.storyboard */,
 				91E9247B2045E5E100443FF1 /* Info.plist */,
-				91E924732045E5E100443FF1 /* Main.storyboard */,
 			);
 			path = SupportingFiles;
 			sourceTree = "<group>";
@@ -344,7 +337,6 @@
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 				Base,
 			);
 			mainGroup = 91E924632045E5E000443FF1;
@@ -365,8 +357,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				91E9247A2045E5E100443FF1 /* LaunchScreen.storyboard in Resources */,
+				916015D82048C12600284649 /* Localizable.strings in Resources */,
 				91E924772045E5E100443FF1 /* Assets.xcassets in Resources */,
-				91E924752045E5E100443FF1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -548,13 +540,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				91E924722045E5E100443FF1 /* InitialViewController.swift in Sources */,
-				912BFBF42048237400EC7716 /* CommonLabel.swift in Sources */,
+				912BFBF42048237400EC7716 /* MoneyBoxLabel.swift in Sources */,
 				91E924E02047375800443FF1 /* UIColor+Extension.swift in Sources */,
 				916015CB2048687E00284649 /* AccountsButton.swift in Sources */,
-				916015C52048284B00284649 /* CommonTextField.swift in Sources */,
+				916015D2204894CC00284649 /* Common.swift in Sources */,
+				916015C52048284B00284649 /* MoneyBoxTextField.swift in Sources */,
 				916015CD20488C1B00284649 /* Subviewable.swift in Sources */,
-				916015C720482EFB00284649 /* CommonButton.swift in Sources */,
+				916015C720482EFB00284649 /* MoneyBoxButton.swift in Sources */,
+				916015DC2048C16400284649 /* String+Extension.swift in Sources */,
 				916015C9204864FB00284649 /* AccountsViewController.swift in Sources */,
+				916015D02048913D00284649 /* UIFont+Extension.swift in Sources */,
 				91E924702045E5E100443FF1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -591,18 +586,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		91E924732045E5E100443FF1 /* Main.storyboard */ = {
+		916015DA2048C12600284649 /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				91E924742045E5E100443FF1 /* Base */,
+				916015D92048C12600284649 /* en */,
+				916015DD2048C2A300284649 /* Base */,
 			);
-			name = Main.storyboard;
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 		91E924782045E5E100443FF1 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				91E924792045E5E100443FF1 /* Base */,
+				916015D52048C0BE00284649 /* en */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";

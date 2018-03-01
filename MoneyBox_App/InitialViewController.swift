@@ -11,17 +11,13 @@ import SnapKit
 
 
 class InitialViewController: UIViewController {
-    
-    static let padding = Float(20)
-    static let margin = Float(3)
 
-    private let contentView = UIView()
-    private let titleLabel = CommonLabel()
-    private let emailLabel = CommonLabel()
-    private let emailTextField = CommonTextField()
-    private let passwordLabel = CommonLabel()
-    private let passwordTextField = CommonTextField()
-    private let loginButton = CommonButton()
+    private let titleLabel = MoneyBoxLabel()
+    private let emailLabel = MoneyBoxLabel()
+    private let emailTextField = MoneyBoxTextField()
+    private let passwordLabel = MoneyBoxLabel()
+    private let passwordTextField = MoneyBoxTextField()
+    private let loginButton = MoneyBoxButton()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,14 +26,9 @@ class InitialViewController: UIViewController {
         setupAutoLayout()
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        navigationController?.navigationBar.isHidden = true
-    }
-    
-  @objc  func pressToVisitAccountsScreen(_ sender: CommonButton) {
+  @objc  func pressToVisitAccountsScreen(_ sender: MoneyBoxButton) {
     let accountsOverviewVC: UIViewController = AccountsViewController()
-    navigationController?.present(accountsOverviewVC, animated: true)
-//    self.loginButton.layer.borderColor = .buttonNavyColor
+    navigationController?.pushViewController(accountsOverviewVC, animated: true)
 
         print("You have successfully logged in!")
     }
@@ -47,76 +38,63 @@ class InitialViewController: UIViewController {
 extension InitialViewController: Subviewable {
     
     internal func setupHierarchy() {
-        self.contentView.backgroundColor = .tealBackgroundColor
-        self.titleLabel.text = "Login"
-        self.emailLabel.text = "Email"
-        self.emailLabel.textAlignment = .left
-        self.emailTextField.placeholder = "me@gmail.com"
-        self.passwordLabel.text = "Password"
-        self.passwordLabel.textAlignment = .left
-        self.passwordTextField.isSecureTextEntry = !passwordTextField.isSecureTextEntry
-        self.loginButton.setTitle("Login",for: .normal)
-        self.loginButton.addTarget(self, action: #selector(pressToVisitAccountsScreen(_:)), for: .touchUpInside)
+        view.addSubview(titleLabel)
+        view.addSubview(emailLabel)
+        view.addSubview(emailTextField)
+        view.addSubview(passwordLabel)
+        view.addSubview(passwordTextField)
+        view.addSubview(loginButton)
 
     }
     
     internal func setupSubviews() {
-        self.view.addSubview(contentView)
-        self.contentView.addSubview(titleLabel)
-        self.contentView.addSubview(emailLabel)
-        self.contentView.addSubview(emailTextField)
-        self.contentView.addSubview(passwordLabel)
-        self.contentView.addSubview(passwordTextField)
-        self.contentView.addSubview(loginButton)
-        
+        view.backgroundColor = .tealBackgroundColor
+        titleLabel.text = String.Localized.login
+        emailLabel.text = String.Localized.email
+        emailLabel.textAlignment = .left
+        emailTextField.placeholder = "me@gmail.com"
+        passwordLabel.text = String.Localized.password
+        passwordLabel.textAlignment = .left
+        passwordTextField.isSecureTextEntry = !passwordTextField.isSecureTextEntry
+        loginButton.setTitle(String.Localized.login,for: .normal)
+        loginButton.addTarget(self, action: #selector(pressToVisitAccountsScreen(_:)), for: .touchUpInside)
     }
     
     internal func setupAutoLayout() {
         
-        self.contentView.snp.makeConstraints { (make) in
-            make.edges.equalToSuperview()
-        }
-        
         self.titleLabel.snp.makeConstraints { (make) in
-            make.top.equalTo((topLayoutGuide.snp.bottom)).offset(-InitialViewController.padding)
-            make.width.equalTo(contentView.snp.width).multipliedBy(0.5)
+            make.centerY.equalTo(view.snp.centerY).multipliedBy(0.5)
             make.centerX.equalToSuperview()
-            make.bottom.equalTo(emailLabel.snp.top)
         }
         
         self.emailLabel.snp.makeConstraints { (make) in
-            make.top.equalTo(titleLabel.snp.bottom)
-            make.width.equalToSuperview().multipliedBy(0.7)
             make.centerX.equalToSuperview()
-            make.bottom.equalTo(emailTextField.snp.top).offset(-InitialViewController.margin)
+            make.width.equalToSuperview().multipliedBy(0.7)
+            make.bottom.equalTo(emailTextField.snp.top).offset(-Layout.labelPadding)
         }
         
         self.emailTextField.snp.makeConstraints { (make) in
-            make.top.equalTo(emailLabel.snp.bottom).offset(InitialViewController.margin)
+            make.centerY.equalToSuperview()
             make.centerX.equalToSuperview()
             make.width.equalToSuperview().multipliedBy(0.7)
-            make.bottom.equalTo(passwordLabel.snp.top).offset(-InitialViewController.padding)
         }
         
         self.passwordLabel.snp.makeConstraints { (make) in
-            make.top.equalTo(emailTextField.snp.bottom).offset(InitialViewController.padding)
-            make.width.equalToSuperview().multipliedBy(0.7)
+            make.top.equalTo(emailTextField.snp.bottom).offset(Layout.labelPadding)
             make.centerX.equalToSuperview()
-            make.bottom.equalTo(passwordTextField.snp.top).offset(-InitialViewController.margin)
+            make.width.equalToSuperview().multipliedBy(0.7)
         }
         
         self.passwordTextField.snp.makeConstraints { (make) in
-            make.top.equalTo(passwordLabel.snp.bottom).offset(InitialViewController.margin)
+            make.top.equalTo(passwordLabel.snp.bottom).offset(Layout.labelPadding)
             make.centerX.equalToSuperview()
             make.width.equalToSuperview().multipliedBy(0.7)
-            make.bottom.equalTo(loginButton.snp.top).offset(-InitialViewController.padding)
         }
         
         self.loginButton.snp.makeConstraints { (make) in
-            make.top.equalTo(passwordTextField.snp.bottom).offset(InitialViewController.padding)
-            make.width.equalTo(passwordTextField).multipliedBy(0.7)
+            make.top.equalTo(passwordTextField.snp.bottom).offset(Layout.buttonPadding)
             make.centerX.equalToSuperview()
-            make.bottom.equalToSuperview().offset(-InitialViewController.padding * 4)
+            make.width.equalTo(passwordTextField).multipliedBy(0.7)
         }
     }
 }
