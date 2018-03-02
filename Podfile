@@ -3,9 +3,8 @@
 
 target 'MoneyBox_App' do
   	# Comment the next line if you're not using Swift and don't want to use dynamic 	frameworks
-	pod 'SnapKit',
-   	:git => 'https://github.com/SnapKit/SnapKit.git',
-   	:branch => '4.0.0'
+	pod 'SnapKit'
+    pod 'Alamofire'
   	use_frameworks!
 	platform :ios, '11.1'
   	# Pods for MoneyBox_App
