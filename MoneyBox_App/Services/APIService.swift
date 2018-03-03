@@ -14,12 +14,12 @@ class APIService {
     let url = URL(string: "https://api-test00.moneyboxapp.com/")!
     
     let parameters = [
-//        "AppId": "8cb2237d0679ca88db6464", "Content-Type": "application/json", "appVersion": "4.0.0", "apiVersion": "3.0.0"
         "Email": "test+env12@moneyboxapp.com", "Password": "Money$$box@107"
         ]
     
     let headers = [
-        "Authorization": "Bearer TsMWRkbrcu3NGrpf84gi2+pg0iOMVymyKklmkY0oI84="
+//        "Authorization": "Bearer TsMWRkbrcu3NGrpf84gi2+pg0iOMVymyKklmkY0oI84="
+                "AppId": "8cb2237d0679ca88db6464", "Content-Type": "application/json", "appVersion": "4.0.0", "apiVersion": "3.0.0"
     ]
     
     
