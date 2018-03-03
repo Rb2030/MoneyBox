@@ -24,11 +24,10 @@ class InitialViewController: UIViewController {
         setupHierarchy()
         setupSubviews()
         setupAutoLayout()
-//        let service = APIService()
-//        let parameters = ["Email": "test+env12@moneyboxapp.com",
-//                          "Password": "Money$$box@107"]
+        let service = APIService()
+        
 
-//        service.request(extension: "/users/login/", parameters: parameters)
+        service.authenticateUser(Email:"test+env12@moneyboxapp.com", Password:"Money$$box@107")
     }
     
   @objc  func pressToVisitAccountsScreen(_ sender: MoneyBoxButton) {
