@@ -1,5 +1,5 @@
 //
-//  Common.swift
+//  Layout.swift
 //  MoneyBox_App
 //
 //  Created by Ross on 01/03/2018.

@@ -14,10 +14,12 @@
 		916015CB2048687E00284649 /* AccountsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916015CA2048687E00284649 /* AccountsButton.swift */; };
 		916015CD20488C1B00284649 /* Subviewable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916015CC20488C1B00284649 /* Subviewable.swift */; };
 		916015D02048913D00284649 /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916015CF2048913D00284649 /* UIFont+Extension.swift */; };
-		916015D2204894CC00284649 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916015D1204894CC00284649 /* Common.swift */; };
+		916015D2204894CC00284649 /* Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916015D1204894CC00284649 /* Layout.swift */; };
 		916015D82048C12600284649 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 916015DA2048C12600284649 /* Localizable.strings */; };
 		916015DC2048C16400284649 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916015DB2048C16400284649 /* String+Extension.swift */; };
-		916015DF2048C8CA00284649 /* APIServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916015DE2048C8CA00284649 /* APIServices.swift */; };
+		916015DF2048C8CA00284649 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916015DE2048C8CA00284649 /* APIService.swift */; };
+		916015E2204AEA9E00284649 /* StocksAndSharesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916015E1204AEA9E00284649 /* StocksAndSharesViewController.swift */; };
+		916015E4204AEABF00284649 /* GeneralInvestmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916015E3204AEABF00284649 /* GeneralInvestmentViewController.swift */; };
 		91E924702045E5E100443FF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E9246F2045E5E100443FF1 /* AppDelegate.swift */; };
 		91E924722045E5E100443FF1 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E924712045E5E100443FF1 /* InitialViewController.swift */; };
 		91E924772045E5E100443FF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91E924762045E5E100443FF1 /* Assets.xcassets */; };
@@ -67,12 +69,14 @@
 		916015CA2048687E00284649 /* AccountsButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsButton.swift; sourceTree = "<group>"; };
 		916015CC20488C1B00284649 /* Subviewable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subviewable.swift; sourceTree = "<group>"; };
 		916015CF2048913D00284649 /* UIFont+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
-		916015D1204894CC00284649 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		916015D1204894CC00284649 /* Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Layout.swift; sourceTree = "<group>"; };
 		916015D52048C0BE00284649 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		916015D92048C12600284649 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		916015DB2048C16400284649 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		916015DD2048C2A300284649 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
-		916015DE2048C8CA00284649 /* APIServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServices.swift; sourceTree = "<group>"; };
+		916015DE2048C8CA00284649 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		916015E1204AEA9E00284649 /* StocksAndSharesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksAndSharesViewController.swift; sourceTree = "<group>"; };
+		916015E3204AEABF00284649 /* GeneralInvestmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralInvestmentViewController.swift; sourceTree = "<group>"; };
 		91E9246C2045E5E100443FF1 /* MoneyBox_App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoneyBox_App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91E9246F2045E5E100443FF1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		91E924712045E5E100443FF1 /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
@@ -167,7 +171,7 @@
 		916015E02048C8F100284649 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				916015DE2048C8CA00284649 /* APIServices.swift */,
+				916015DE2048C8CA00284649 /* APIService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -199,6 +203,8 @@
 			children = (
 				91E924712045E5E100443FF1 /* InitialViewController.swift */,
 				916015C8204864FA00284649 /* AccountsViewController.swift */,
+				916015E1204AEA9E00284649 /* StocksAndSharesViewController.swift */,
+				916015E3204AEABF00284649 /* GeneralInvestmentViewController.swift */,
 				916015E02048C8F100284649 /* Services */,
 				91E9248F2046DE5500443FF1 /* Common */,
 				91E924902046E04900443FF1 /* SupportingFiles */,
@@ -211,7 +217,7 @@
 			children = (
 				91E924DF2047375800443FF1 /* UIColor+Extension.swift */,
 				916015CF2048913D00284649 /* UIFont+Extension.swift */,
-				916015D1204894CC00284649 /* Common.swift */,
+				916015D1204894CC00284649 /* Layout.swift */,
 				912BFBF32048237400EC7716 /* MoneyBoxLabel.swift */,
 				916015C42048284B00284649 /* MoneyBoxTextField.swift */,
 				916015DB2048C16400284649 /* String+Extension.swift */,
@@ -399,11 +405,15 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-MoneyBox_App/Pods-MoneyBox_App-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/TRON/TRON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TRON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -554,15 +564,17 @@
 			files = (
 				91E924722045E5E100443FF1 /* InitialViewController.swift in Sources */,
 				912BFBF42048237400EC7716 /* MoneyBoxLabel.swift in Sources */,
-				916015DF2048C8CA00284649 /* APIServices.swift in Sources */,
+				916015DF2048C8CA00284649 /* APIService.swift in Sources */,
 				91E924E02047375800443FF1 /* UIColor+Extension.swift in Sources */,
+				916015E4204AEABF00284649 /* GeneralInvestmentViewController.swift in Sources */,
 				916015CB2048687E00284649 /* AccountsButton.swift in Sources */,
-				916015D2204894CC00284649 /* Common.swift in Sources */,
+				916015D2204894CC00284649 /* Layout.swift in Sources */,
 				916015C52048284B00284649 /* MoneyBoxTextField.swift in Sources */,
 				916015CD20488C1B00284649 /* Subviewable.swift in Sources */,
 				916015C720482EFB00284649 /* MoneyBoxButton.swift in Sources */,
 				916015DC2048C16400284649 /* String+Extension.swift in Sources */,
 				916015C9204864FB00284649 /* AccountsViewController.swift in Sources */,
+				916015E2204AEA9E00284649 /* StocksAndSharesViewController.swift in Sources */,
 				916015D02048913D00284649 /* UIFont+Extension.swift in Sources */,
 				91E924702045E5E100443FF1 /* AppDelegate.swift in Sources */,
 			);

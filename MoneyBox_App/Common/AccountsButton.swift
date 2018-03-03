@@ -24,11 +24,11 @@ class AccountsButton: UIButton {
     func commonInit(){
         
         self.backgroundColor = .buttonNavyColor
-        self.setTitleColor( .lightTealButtonColor, for: .normal)
-        self.setTitleColor( .pageCreamLabelColor, for: .highlighted)
+        self.setTitleColor( .buttonPinkColor, for: .normal)
+        self.setTitleColor( .lightTealButtonColor, for: .highlighted)
         self.titleLabel?.font = UIFont(name: "SFUIDisplay-Ultralight", size: 25)
         self.clipsToBounds = true
-        self.setProperties(borderColor: .lightTealButtonColor, borderWidth:1.0, cornerRadius:5.0)
+        self.setProperties(borderColor: .buttonPinkColor, borderWidth:1.0, cornerRadius:5.0)
     }
     
     func setProperties(borderColor: UIColor, borderWidth: CGFloat, cornerRadius: Float) {

@@ -20,6 +20,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let navigationController = UINavigationController(rootViewController: initialViewController)
         self.window?.rootViewController = navigationController
         self.window?.makeKeyAndVisible()
+        UINavigationBar.appearance().barTintColor = .tealBackgroundColor
+        navigationController.navigationBar.setValue(true, forKey: "hidesShadow")
         return true
     }
 

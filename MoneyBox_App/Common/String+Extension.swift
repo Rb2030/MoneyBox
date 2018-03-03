@@ -19,5 +19,11 @@ extension String {
         static let email = "Email".localized
         static let password = "Password".localized
         static let yourAccounts = "Your_Accounts".localized
+        static let stocksAndSharesISA = "Stocks_&_Shares_ISA__>".localized
+        static let generalInvestmentAccount = "General_Investment_Account__>".localized
+        static let stocksAndSharesISALabel = "Stocks_&_Shares_ISA".localized
+        static let yourMoneybox = "Your_Moneybox_Total:".localized
+        static let addTenPoundsToMB = "Add_£10_to_your_Moneybox".localized
+        static let generalInvestmentAccountLabel = "General_Investment_Account".localized
     }
 }

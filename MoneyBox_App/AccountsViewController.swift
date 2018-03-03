@@ -10,11 +10,9 @@ import UIKit
 
 class AccountsViewController: UIViewController {
     
-    private let contentView = UIView()
     private let titleLabel = MoneyBoxLabel()
-    
-    static let padding = Float(20)
-    static let margin = Float(3)
+    private let stocksSharesIsaButton = AccountsButton()
+    private let gIAButton = AccountsButton()
 
 
     override func viewDidLoad() {
@@ -23,13 +21,23 @@ class AccountsViewController: UIViewController {
         setupSubviews()
         setupAutoLayout()
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
     
     override func viewWillAppear(_ animated: Bool) {
                 navigationController?.navigationBar.isHidden = false
+    }
+    
+    @objc  func pressToVisitStocksSharesScreen(_ sender: MoneyBoxButton) {
+        let stocksSharesVC: UIViewController = StocksAndSharesViewController()
+        navigationController?.pushViewController(stocksSharesVC, animated: true)
+        
+        print("User chose to view Stocks & Shares VC!")
+    }
+    
+    @objc  func pressToVisitGeneralInvestmentScreen(_ sender: MoneyBoxButton) {
+        let generalInvestmentVC: UIViewController = GeneralInvestmentViewController()
+        navigationController?.pushViewController(generalInvestmentVC, animated: true)
+        
+        print("User chose to view General Investment Account VC!")
     }
     
 }
@@ -37,28 +45,42 @@ class AccountsViewController: UIViewController {
 extension AccountsViewController: Subviewable {
     
     internal func setupHierarchy() {
-        self.contentView.backgroundColor = .tealBackgroundColor
-        self.titleLabel.text = String.Localized.yourAccounts
+        view.addSubview(titleLabel)
+        view.addSubview(stocksSharesIsaButton)
+        view.addSubview(gIAButton)
         
     }
     
     internal func setupSubviews() {
-        self.view.addSubview(contentView)
-        self.contentView.addSubview(titleLabel)
+        view.backgroundColor = .tealBackgroundColor
+        titleLabel.text = String.Localized.yourAccounts
+        stocksSharesIsaButton.setTitle(String.Localized.stocksAndSharesISA,for: .normal)
+        stocksSharesIsaButton.addTarget(self, action: #selector(pressToVisitStocksSharesScreen(_:)), for: .touchUpInside)
+        gIAButton.setTitle(String.Localized.generalInvestmentAccount, for: .normal)
+        gIAButton.addTarget(self, action: #selector(pressToVisitGeneralInvestmentScreen(_:)), for: .touchUpInside)
+
+
     }
     
     internal func setupAutoLayout() {
         
-        self.contentView.snp.makeConstraints { (make) in
-            make.edges.equalToSuperview()
+        self.titleLabel.snp.makeConstraints { (make) in
+            make.centerY.equalTo(view.snp.centerY).multipliedBy(0.3)
+            make.centerX.equalToSuperview()
         }
         
-        self.titleLabel.snp.makeConstraints { (make) in
-            make.top.equalTo((view.snp.top)).offset(-Layout.labelPadding)
-            make.width.equalTo(contentView.snp.width).multipliedBy(0.5)
+        self.stocksSharesIsaButton.snp.makeConstraints { (make) in
             make.centerX.equalToSuperview()
-            make.bottom.equalToSuperview()
-//            make.bottom.equalTo([AccountsButton(0)].snp.top)
+            make.width.equalToSuperview().multipliedBy(0.8)
+            make.height.equalTo(stocksSharesIsaButton.snp.width).multipliedBy(0.2)
+            make.bottom.equalTo(gIAButton.snp.top).offset(-Layout.buttonPadding)
+        }
+        
+        self.gIAButton.snp.makeConstraints { (make) in
+            make.centerY.equalToSuperview()
+            make.centerX.equalToSuperview()
+            make.height.equalTo(stocksSharesIsaButton)
+            make.width.equalToSuperview().multipliedBy(0.8)
         }
     }
     
