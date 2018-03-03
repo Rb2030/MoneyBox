@@ -27,7 +27,7 @@ class InitialViewController: UIViewController {
         let service = APIService()
         
 
-        service.authenticateUser(Email:"test+env12@moneyboxapp.com", Password:"Money$$box@107")
+        service.authenticateUser()
     }
     
   @objc  func pressToVisitAccountsScreen(_ sender: MoneyBoxButton) {

@@ -11,10 +11,11 @@ import Alamofire
 
 class APIService {
     
-    let url = "https://api-test00.moneyboxapp.com/users/login/"
+    let url = URL(string: "https://api-test00.moneyboxapp.com/")!
     
     let parameters = [
-        "AppId": "8cb2237d0679ca88db6464", "Content-Type": "application/json", "appVersion": "4.0.0", "apiVersion": "3.0.0"
+//        "AppId": "8cb2237d0679ca88db6464", "Content-Type": "application/json", "appVersion": "4.0.0", "apiVersion": "3.0.0"
+        "Email": "test+env12@moneyboxapp.com", "Password": "Money$$box@107"
         ]
     
     let headers = [
@@ -22,9 +23,18 @@ class APIService {
     ]
     
     
-    func authenticateUser(Email:String, Password:String) {
-        Alamofire.request(url, method: .post, parameters: parameters, encoding: JSONEncoding.default, headers: headers).responseJSON { (response) in
-            print(response)
+    func authenticateUser() {
+
+//        URLSession.shared.dataTask(with: url) { data, response, error in
+//            guard let data = data else { return }
+//            print(data.count) // you can parse your json data here
+//            }.resume()
+        
+        let fullURL = "\(url)" + "users/login/"
+        
+        Alamofire.request(fullURL, method: .post, parameters: parameters, encoding: JSONEncoding.default, headers: headers).responseJSON { (response) in
+            print(response.result)
+            debugPrint(response)
 //            if response.result.isFailure {
 //                print("Error")
 //            }else {

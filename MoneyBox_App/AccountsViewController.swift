@@ -59,7 +59,6 @@ extension AccountsViewController: Subviewable {
         gIAButton.setTitle(String.Localized.generalInvestmentAccount, for: .normal)
         gIAButton.addTarget(self, action: #selector(pressToVisitGeneralInvestmentScreen(_:)), for: .touchUpInside)
 
-
     }
     
     internal func setupAutoLayout() {
