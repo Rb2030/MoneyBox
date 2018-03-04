@@ -18,28 +18,26 @@ class APIService {
         ]
     
     let headers = [
-//        "Authorization": "Bearer TsMWRkbrcu3NGrpf84gi2+pg0iOMVymyKklmkY0oI84="
-                "AppId": "8cb2237d0679ca88db6464", "Content-Type": "application/json", "appVersion": "4.0.0", "apiVersion": "3.0.0"
+        "AppId": "8cb2237d0679ca88db6464", "Content-Type": "application/json", "appVersion": "4.0.0", "apiVersion": "3.0.0"
     ]
     
     
     func authenticateUser() {
 
-//        URLSession.shared.dataTask(with: url) { data, response, error in
-//            guard let data = data else { return }
-//            print(data.count) // you can parse your json data here
-//            }.resume()
-        
         let fullURL = "\(url)" + "users/login/"
         
         Alamofire.request(fullURL, method: .post, parameters: parameters, encoding: JSONEncoding.default, headers: headers).responseJSON { (response) in
             print(response.result)
             debugPrint(response)
-//            if response.result.isFailure {
-//                print("Error")
-//            }else {
-//            print("Success")
-//            }
+            if response.result.isFailure {
+                print("Error")
+            }else {
+            print("Success")
+            }
         }
+    }
+    
+    func obtainingUserData() {
+        
     }
 }
