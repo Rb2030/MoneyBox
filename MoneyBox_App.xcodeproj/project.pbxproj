@@ -20,6 +20,8 @@
 		916015DF2048C8CA00284649 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916015DE2048C8CA00284649 /* APIService.swift */; };
 		916015E2204AEA9E00284649 /* StocksAndSharesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916015E1204AEA9E00284649 /* StocksAndSharesViewController.swift */; };
 		916015E4204AEABF00284649 /* GeneralInvestmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916015E3204AEABF00284649 /* GeneralInvestmentViewController.swift */; };
+		916015E6204C4B5600284649 /* NetworkingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916015E5204C4B5600284649 /* NetworkingError.swift */; };
+		916015E8204C4C9600284649 /* UserDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916015E7204C4C9600284649 /* UserDetails.swift */; };
 		91E924702045E5E100443FF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E9246F2045E5E100443FF1 /* AppDelegate.swift */; };
 		91E924722045E5E100443FF1 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E924712045E5E100443FF1 /* InitialViewController.swift */; };
 		91E924772045E5E100443FF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91E924762045E5E100443FF1 /* Assets.xcassets */; };
@@ -77,6 +79,8 @@
 		916015DE2048C8CA00284649 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		916015E1204AEA9E00284649 /* StocksAndSharesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksAndSharesViewController.swift; sourceTree = "<group>"; };
 		916015E3204AEABF00284649 /* GeneralInvestmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralInvestmentViewController.swift; sourceTree = "<group>"; };
+		916015E5204C4B5600284649 /* NetworkingError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingError.swift; sourceTree = "<group>"; };
+		916015E7204C4C9600284649 /* UserDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetails.swift; sourceTree = "<group>"; };
 		91E9246C2045E5E100443FF1 /* MoneyBox_App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoneyBox_App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91E9246F2045E5E100443FF1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		91E924712045E5E100443FF1 /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
@@ -172,6 +176,8 @@
 			isa = PBXGroup;
 			children = (
 				916015DE2048C8CA00284649 /* APIService.swift */,
+				916015E5204C4B5600284649 /* NetworkingError.swift */,
+				916015E7204C4C9600284649 /* UserDetails.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -564,6 +570,7 @@
 			files = (
 				91E924722045E5E100443FF1 /* InitialViewController.swift in Sources */,
 				912BFBF42048237400EC7716 /* MoneyBoxLabel.swift in Sources */,
+				916015E6204C4B5600284649 /* NetworkingError.swift in Sources */,
 				916015DF2048C8CA00284649 /* APIService.swift in Sources */,
 				91E924E02047375800443FF1 /* UIColor+Extension.swift in Sources */,
 				916015E4204AEABF00284649 /* GeneralInvestmentViewController.swift in Sources */,
@@ -576,6 +583,7 @@
 				916015C9204864FB00284649 /* AccountsViewController.swift in Sources */,
 				916015E2204AEA9E00284649 /* StocksAndSharesViewController.swift in Sources */,
 				916015D02048913D00284649 /* UIFont+Extension.swift in Sources */,
+				916015E8204C4C9600284649 /* UserDetails.swift in Sources */,
 				91E924702045E5E100443FF1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

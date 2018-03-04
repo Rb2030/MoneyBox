@@ -28,6 +28,7 @@ class InitialViewController: UIViewController {
         
 
         service.authenticateUser()
+//        service.getuserDetails()
     }
     
   @objc  func pressToVisitAccountsScreen(_ sender: MoneyBoxButton) {
