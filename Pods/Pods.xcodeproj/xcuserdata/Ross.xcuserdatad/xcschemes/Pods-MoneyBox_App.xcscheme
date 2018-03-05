@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "663EB7D17C18F2D170F77FDEA8F24D2A"
+               BlueprintIdentifier = "91FBEF11D72E5DEB967AA94BF57B7DE3"
                BuildableName = "Pods_MoneyBox_App.framework"
                BlueprintName = "Pods-MoneyBox_App"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -47,7 +47,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "663EB7D17C18F2D170F77FDEA8F24D2A"
+            BlueprintIdentifier = "91FBEF11D72E5DEB967AA94BF57B7DE3"
             BuildableName = "Pods_MoneyBox_App.framework"
             BlueprintName = "Pods-MoneyBox_App"
             ReferencedContainer = "container:Pods.xcodeproj">

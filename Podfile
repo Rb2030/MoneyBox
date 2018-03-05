@@ -5,7 +5,6 @@ target 'MoneyBox_App' do
   	# Comment the next line if you're not using Swift and don't want to use dynamic 	frameworks
 	pod 'SnapKit'
     	pod 'Alamofire'
-	pod ’TRON’
   	use_frameworks!
 	platform :ios, '11.1'
   	# Pods for MoneyBox_App
