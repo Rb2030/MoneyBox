@@ -10,11 +10,11 @@ import UIKit
 
 class StocksAndSharesViewController: UIViewController {
     
-    private let pagetitleLabel = MoneyBoxLabel()
-    private let totalAccountLabel = UILabel()
-    private let accountTitleLabel = MoneyBoxLabel()
-    private let moneyBoxAmountLabel = UILabel()
+    private let moneyBoxAmountLabel = MoneyBoxLabel()
     private let addFundsButton = MoneyBoxButton()
+    
+    var product: Product!
+    var token: String!
 
 
     override func viewDidLoad() {
@@ -23,51 +23,45 @@ class StocksAndSharesViewController: UIViewController {
         setupSubviews()
         setupAutoLayout()
     }
-
+    
+    @objc private func buttonTapped() {
+        let service = APIService()
+        service.makeOneOffPayment(with: product.id, and: token){ success, error in
+            if success {
+                print("You added a tenner!")
+                self.product.moneyBox += 10
+                self.moneyBoxAmountLabel.text = String.Localized.yourMoneybox + " " + String(describing: self.product.moneyBox)
+            } else {
+                print("Error getting token \(String(describing: error))")
+            }
+        }
+    }
 }
 
 extension StocksAndSharesViewController: Subviewable {
     
     internal func setupHierarchy() {
-        view.addSubview(pagetitleLabel)
-        view.addSubview(totalAccountLabel)
-        view.addSubview(accountTitleLabel)
         view.addSubview(moneyBoxAmountLabel)
         view.addSubview(addFundsButton)
     }
 
     internal func setupSubviews() {
         view.backgroundColor = .tealBackgroundColor
-        pagetitleLabel.text = String.Localized.stocksAndSharesISALabel
-        totalAccountLabel.numberOfLines = 0
-        accountTitleLabel.text = String.Localized.yourMoneybox
-        accountTitleLabel.textAlignment = .left
+        title = String.Localized.stocksAndSharesISALabel
+        moneyBoxAmountLabel.numberOfLines = 0
+        moneyBoxAmountLabel.text = String.Localized.yourMoneybox + " " + String(describing: product.moneyBox)
         addFundsButton.setTitle(String.Localized.addTenPoundsToMB,for: .normal)
         addFundsButton.setTitleColor( .buttonPinkColor, for: .highlighted)
+        addFundsButton.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
 
     }
 
     internal func setupAutoLayout() {
         
-        self.pagetitleLabel.snp.makeConstraints { (make) in
-            make.centerY.equalToSuperview().multipliedBy(0.3)
-            make.centerX.equalToSuperview()
-        }
-        
-        self.totalAccountLabel.snp.makeConstraints { (make) in
-            make.top.equalTo(pagetitleLabel.snp.bottom).offset(Layout.labelPadding)
-            make.width.equalToSuperview()
-        }
-        
-        self.accountTitleLabel.snp.makeConstraints { (make) in
-            make.top.equalTo(totalAccountLabel.snp.bottom).offset(Layout.margin * 2)
-            make.leading.equalToSuperview().offset(Layout.margin)
-        }
         
         self.moneyBoxAmountLabel.snp.makeConstraints { (make) in
-            make.leading.equalTo(accountTitleLabel.snp.trailing)
-            make.top.equalTo(accountTitleLabel)
-            make.bottom.equalTo(accountTitleLabel)
+            make.centerY.equalTo(view.snp.centerY).multipliedBy(0.5)
+            make.width.equalToSuperview()
         }
         
         self.addFundsButton.snp.makeConstraints { (make) in

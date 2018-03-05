@@ -12,7 +12,6 @@ import SnapKit
 
 class InitialViewController: UIViewController {
 
-    private let titleLabel = MoneyBoxLabel()
     private let emailLabel = MoneyBoxLabel()
     private let emailTextField = MoneyBoxTextField()
     private let passwordLabel = MoneyBoxLabel()
@@ -24,18 +23,23 @@ class InitialViewController: UIViewController {
         setupHierarchy()
         setupSubviews()
         setupAutoLayout()
-        let service = APIService()
         
-
-        service.authenticateUser()
 //        service.getuserDetails()
+//        service.loginUser
     }
     
   @objc  func pressToVisitAccountsScreen(_ sender: MoneyBoxButton) {
-    let accountsOverviewVC: UIViewController = AccountsViewController()
-    navigationController?.pushViewController(accountsOverviewVC, animated: true)
-
-        print("You have successfully logged in!")
+    let service = APIService()
+    let parameters = ["Email": emailTextField.text!, "Password": passwordTextField.text!]
+    service.authenticateUser(with: parameters){ token, success, error in
+        if success {
+            let accountsOverviewVC = AccountsViewController()
+            accountsOverviewVC.token = token
+            self.navigationController?.pushViewController(accountsOverviewVC, animated: true)
+        } else {
+            print("Error getting token \(String(describing: error))")
+        }
+    }
     }
 
 }
@@ -43,7 +47,6 @@ class InitialViewController: UIViewController {
 extension InitialViewController: Subviewable {
     
     internal func setupHierarchy() {
-        view.addSubview(titleLabel)
         view.addSubview(emailLabel)
         view.addSubview(emailTextField)
         view.addSubview(passwordLabel)
@@ -54,23 +57,20 @@ extension InitialViewController: Subviewable {
     
     internal func setupSubviews() {
         view.backgroundColor = .tealBackgroundColor
-        titleLabel.text = String.Localized.login
+        title = String.Localized.login
         emailLabel.text = String.Localized.email
         emailLabel.textAlignment = .left
         emailTextField.placeholder = "me@gmail.com"
+        emailTextField.text = "test+env12@moneyboxapp.com"
         passwordLabel.text = String.Localized.password
         passwordLabel.textAlignment = .left
+        passwordTextField.text = "Money$$box@107"
         passwordTextField.isSecureTextEntry = !passwordTextField.isSecureTextEntry
         loginButton.setTitle(String.Localized.login,for: .normal)
         loginButton.addTarget(self, action: #selector(pressToVisitAccountsScreen(_:)), for: .touchUpInside)
     }
     
     internal func setupAutoLayout() {
-        
-        self.titleLabel.snp.makeConstraints { (make) in
-            make.centerY.equalTo(view.snp.centerY).multipliedBy(0.3)
-            make.centerX.equalToSuperview()
-        }
         
         self.emailLabel.snp.makeConstraints { (make) in
             make.centerX.equalToSuperview()

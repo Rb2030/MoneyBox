@@ -10,9 +10,10 @@ import UIKit
 
 class AccountsViewController: UIViewController {
     
-    private let titleLabel = MoneyBoxLabel()
     private let stocksSharesIsaButton = AccountsButton()
     private let gIAButton = AccountsButton()
+    var token: String!
+    private var products = [Product]()
 
 
     override func viewDidLoad() {
@@ -20,6 +21,7 @@ class AccountsViewController: UIViewController {
         setupHierarchy()
         setupSubviews()
         setupAutoLayout()
+        getProducts()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -27,17 +29,56 @@ class AccountsViewController: UIViewController {
     }
     
     @objc  func pressToVisitStocksSharesScreen(_ sender: MoneyBoxButton) {
-        let stocksSharesVC: UIViewController = StocksAndSharesViewController()
-        navigationController?.pushViewController(stocksSharesVC, animated: true)
+        for product in products {
+            if product.type == "Isa" {
+                let stocksSharesVC = StocksAndSharesViewController()
+                stocksSharesVC.product = product
+                stocksSharesVC.token = token
+                navigationController?.pushViewController(stocksSharesVC, animated: true)
+            }
+            
+        }
         
         print("User chose to view Stocks & Shares VC!")
     }
     
     @objc  func pressToVisitGeneralInvestmentScreen(_ sender: MoneyBoxButton) {
-        let generalInvestmentVC: UIViewController = GeneralInvestmentViewController()
-        navigationController?.pushViewController(generalInvestmentVC, animated: true)
-        
-        print("User chose to view General Investment Account VC!")
+        for product in products {
+            if product.type == "Gia" {
+                let generalInvestmentVC = GeneralInvestmentViewController()
+                generalInvestmentVC.product = product
+                generalInvestmentVC.token = token
+                navigationController?.pushViewController(generalInvestmentVC, animated: true)
+            }
+        }
+    }
+    
+     func getProducts() {
+        let service = APIService()
+        service.getProductForThisWeek(with: token){ productsJSON, success, error in
+            if success {
+                do {
+                    let decoder = JSONDecoder()
+                    let productData = try decoder.decode(ProductData.self, from: productsJSON!)
+                    self.products = productData.products
+                    self.showAccountButtons(products: productData.products)
+                } catch let error {
+                    print(error)
+                }
+            } else {
+                print("Error getting token \(String(describing: error))")
+            }
+        }
+    }
+    
+    private func showAccountButtons(products: [Product]) {
+        for product in products {
+            if product.type == "Isa" {
+                stocksSharesIsaButton.isHidden = false
+            } else if product.type == "Gia" {
+                    gIAButton.isHidden = false
+            }
+        }
     }
     
 }
@@ -45,7 +86,6 @@ class AccountsViewController: UIViewController {
 extension AccountsViewController: Subviewable {
     
     internal func setupHierarchy() {
-        view.addSubview(titleLabel)
         view.addSubview(stocksSharesIsaButton)
         view.addSubview(gIAButton)
         
@@ -53,20 +93,17 @@ extension AccountsViewController: Subviewable {
     
     internal func setupSubviews() {
         view.backgroundColor = .tealBackgroundColor
-        titleLabel.text = String.Localized.yourAccounts
+        title = String.Localized.yourAccounts
         stocksSharesIsaButton.setTitle(String.Localized.stocksAndSharesISA,for: .normal)
         stocksSharesIsaButton.addTarget(self, action: #selector(pressToVisitStocksSharesScreen(_:)), for: .touchUpInside)
+        stocksSharesIsaButton.isHidden = true
         gIAButton.setTitle(String.Localized.generalInvestmentAccount, for: .normal)
         gIAButton.addTarget(self, action: #selector(pressToVisitGeneralInvestmentScreen(_:)), for: .touchUpInside)
+        gIAButton.isHidden = true
 
     }
     
     internal func setupAutoLayout() {
-        
-        self.titleLabel.snp.makeConstraints { (make) in
-            make.centerY.equalTo(view.snp.centerY).multipliedBy(0.3)
-            make.centerX.equalToSuperview()
-        }
         
         self.stocksSharesIsaButton.snp.makeConstraints { (make) in
             make.centerX.equalToSuperview()
