@@ -1,15 +1,20 @@
 
 ## MoneyBox Tech Challenge ## 
 
+
 A small app allowing a user to browse through their Moneybox accounts and add a fixed amount of money to each one.
 
+
 ### Getting Started ### 
+
 
 After cloning this app through github, navigate to the working directory of the app, please install the correct libraries and frameworks using "gem install cocoapods" and "pod install" through the command line.
 
 This app runs through the "MoneyBox_App.xcworkspace: file" with the XCode simulator. Press play to run.
 
+
 ### Improvements ### 
+
 
 Due to time restraints this app does not include many functiions that I would have liked. This is my first time using API's with Swift/XCode so it has been a thoroughly educational experience. If I where to continue with this project I would like to include the following:
 
